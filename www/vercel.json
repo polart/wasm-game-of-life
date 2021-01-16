@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "scope": "polart",
+    "github": {
+        "enabled": false
+    },
+    "routes": [
+        {
+            "src": "/wasm-game-of-life",
+            "dest": "index.html",
+            "headers": {
+                "X-Robots-Tag": "index"
+            }
+        },
+        {
+            "src": "/wasm-game-of-life/(.*)",
+            "dest": "$1"
+        }
+    ]
+}
