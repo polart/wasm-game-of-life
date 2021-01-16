@@ -18,5 +18,5 @@ Go to http://localhost:8080/
 
 Testing
 ```
-wasm-pack test --headless
+wasm-pack test --headless --chrome
 ```
