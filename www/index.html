@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello wasm-pack!</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #btn-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+      }
+      #label-range-fps {
+        vertical-align: middle;
+      }
+      #range-fps {
+        vertical-align: middle;
+      }
+      #btn-play-pause, #btn-clean {
+        height: 30px;
+      }
+    </style>    
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div id="btn-container">
+      <label id="label-range-fps">FPS</label>
+      <input id="range-fps" type="range" min="1" max="120" step="1">
+      <button id="btn-play-pause"></button>
+      <button id="btn-clean">Clean</button>
+    </div>
+    <canvas id="game-of-life-canvas"></canvas>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
